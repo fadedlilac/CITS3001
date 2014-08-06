@@ -1,0 +1,4 @@
+for H in 'Empties$' EmptiesA BoardScore AdjacentR AdjacentM
+do
+	cat testrun2.out | grep $H -B1 -A4 | sed 's/ /	/g'
+done

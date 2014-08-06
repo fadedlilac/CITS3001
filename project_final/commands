@@ -1,0 +1,5 @@
+for H in 'Empties$' EmptiesA BoardScore AdjacentR AdjacentM
+do
+	cat testrun2.out | grep $H -B1 -A4 | sed 's/ /	/g'
+done
+java CITS3001.Tester < Example\ boards/longboard4.in 2>&1 >/dev/null | grep Scor | cut -f 2

@@ -1,0 +1,15 @@
+From directory EmilyEvan run:
+
+javac CITS3001/*.java
+java CITS3001.ThreesAI [opt] < Board/Evan.in > Board.out
+
+The [opt] selects between strategies Beta and Mu. No option selects Beta, any option selects Mu. 
+Some test information is printed to stderr, and the output file is printed to std out as per unix convention.
+
+
+ABOUT:
+This project was written for CITS3001 2014 by Emily Martin and Evan Benn. 
+The project was to write an AI/Agent for a simplified game of threes. 
+We wrote a flexible system using java, strategies and heuristics are written
+seperately to the game logic to allow easy comparison and testing.
+
